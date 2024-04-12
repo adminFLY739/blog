@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>py实验6 | FLY's blog!</title><meta name="author" content="adminFLY_739"><meta name="copyright" content="adminFLY_739"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1123string &#x3D; input()ch &#x3D; input()print(string.count(ch))  2123456ch &#x3D; input()string &#x3D; input()if string.rfind(ch) &#x3D;&#x3D; -1:    print(&quot;Not Found&quot;)else:    print(&quot;index &#x3D;&quot;, string.rfind(c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="py实验6">
+<meta property="og:url" content="http://adminfly739.github.io/blog/2024/4/11/py%E5%AE%9E%E9%AA%8C6/index.html">
+<meta property="og:site_name" content="FLY&#39;s blog!">
+<meta property="og:description" content="1123string &#x3D; input()ch &#x3D; input()print(string.count(ch))  2123456ch &#x3D; input()string &#x3D; input()if string.rfind(ch) &#x3D;&#x3D; -1:    print(&quot;Not Found&quot;)else:    print(&quot;index &#x3D;&quot;, string.rfind(c">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-04-11T15:00:00.000Z">
+<meta property="article:modified_time" content="2024-04-12T03:22:25.387Z">
+<meta property="article:author" content="adminFLY_739">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/blog/img/favicon.png"><link rel="canonical" href="http://adminfly739.github.io/blog/2024/4/11/py%E5%AE%9E%E9%AA%8C6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/blog/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: {"path":"/blog/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":10000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'py实验6',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2024-04-12 11:22:25'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/blog/" title="FLY's blog!"><span class="site-name">FLY's blog!</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">py实验6</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-11T15:00:00.000Z" title="发表于 2024-04-11 23:00:00">2024-04-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-12T03:22:25.387Z" title="更新于 2024-04-12 11:22:25">2024-04-12</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="built_in">input</span>()</span><br><span class="line">ch = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(string.count(ch))</span><br></pre></td></tr></table></figure>
+
+<h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ch = <span class="built_in">input</span>()</span><br><span class="line">string = <span class="built_in">input</span>()</span><br><span class="line"><span class="keyword">if</span> string.rfind(ch) == -<span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Not Found&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;index =&quot;</span>, string.rfind(ch))</span><br></pre></td></tr></table></figure>
+
+<h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="built_in">input</span>()</span><br><span class="line"><span class="keyword">for</span> ch <span class="keyword">in</span> string:</span><br><span class="line">    <span class="keyword">if</span> ch.isdigit():</span><br><span class="line">        <span class="built_in">print</span>(ch, end=<span class="string">&quot;&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="4"><a href="#4" class="headerlink" title="4"></a>4</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="built_in">eval</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    ATGC = <span class="built_in">input</span>()</span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> ATGC:</span><br><span class="line">        <span class="keyword">if</span> ch == <span class="string">&#x27;A&#x27;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;T&#x27;</span>, end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">elif</span> ch == <span class="string">&#x27;T&#x27;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;A&#x27;</span>, end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">elif</span> ch == <span class="string">&#x27;G&#x27;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;C&#x27;</span>, end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">elif</span> ch == <span class="string">&#x27;C&#x27;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;G&#x27;</span>, end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+
+<h1 id="5"><a href="#5" class="headerlink" title="5"></a>5</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="built_in">input</span>()</span><br><span class="line">string = <span class="built_in">str</span>.lower()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">26</span>):</span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> string:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">chr</span>(i + <span class="number">97</span>) == ch:</span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> cnt != <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">chr</span>(i + <span class="number">97</span>), end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;:&quot;</span>, end = <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(cnt)</span><br></pre></td></tr></table></figure>
+
+<h1 id="6"><a href="#6" class="headerlink" title="6"></a>6</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">stringMax = <span class="string">&quot;&quot;</span></span><br><span class="line">string_1 = <span class="built_in">input</span>()</span><br><span class="line">string_2 = <span class="built_in">input</span>()</span><br><span class="line">string_3 = <span class="built_in">input</span>()</span><br><span class="line">string_4 = <span class="built_in">input</span>()</span><br><span class="line">string_5 = <span class="built_in">input</span>()</span><br><span class="line"><span class="keyword">if</span> string_1 &gt; string_2 <span class="keyword">and</span> string_1 &gt; string_3 <span class="keyword">and</span> string_1 &gt; string_4 <span class="keyword">and</span> string_1 &gt; string_5:</span><br><span class="line">    stringMax = string_1</span><br><span class="line"><span class="keyword">elif</span> string_2 &gt; string_1 <span class="keyword">and</span> string_2 &gt; string_3 <span class="keyword">and</span> string_2 &gt; string_4 <span class="keyword">and</span> string_2 &gt; string_5:</span><br><span class="line">    stringMax = string_2</span><br><span class="line"><span class="keyword">elif</span> string_3 &gt; string_1 <span class="keyword">and</span> string_3 &gt; string_2 <span class="keyword">and</span> string_3 &gt; string_4 <span class="keyword">and</span> string_3 &gt; string_5:</span><br><span class="line">    stringMax = string_3</span><br><span class="line"><span class="keyword">elif</span> string_4 &gt; string_1 <span class="keyword">and</span> string_4 &gt; string_2 <span class="keyword">and</span> string_4 &gt; string_3 <span class="keyword">and</span> string_4 &gt; string_5:</span><br><span class="line">    stringMax = string_4</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    stringMax = string_5</span><br><span class="line"><span class="built_in">print</span>(stringMax)</span><br></pre></td></tr></table></figure>
+
+<h1 id="7"><a href="#7" class="headerlink" title="7"></a>7</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_anagram</span>(<span class="params">str1, str2</span>):</span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str1:</span><br><span class="line">        <span class="keyword">if</span> ch <span class="keyword">not</span> <span class="keyword">in</span> str2:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str2:</span><br><span class="line">        <span class="keyword">if</span> ch <span class="keyword">not</span> <span class="keyword">in</span> str1:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    str1 = <span class="built_in">input</span>()</span><br><span class="line">    str2 = <span class="built_in">input</span>()</span><br><span class="line">    <span class="built_in">print</span>(is_anagram(str1, str2))</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+
+<h1 id="8"><a href="#8" class="headerlink" title="8"></a>8</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_acronym</span>(<span class="params">ph</span>):</span><br><span class="line">    <span class="built_in">list</span> = []</span><br><span class="line">    phrase = ph.title()</span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> phrase:</span><br><span class="line">        <span class="keyword">if</span> ch.isupper():</span><br><span class="line">            <span class="built_in">list</span>.append(ch)</span><br><span class="line">    ans = <span class="string">&#x27;&#x27;</span>.join(<span class="built_in">list</span>)</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    phrase=<span class="built_in">input</span>()</span><br><span class="line">    <span class="built_in">print</span>(is_acronym(phrase))</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="9"><a href="#9" class="headerlink" title="9"></a>9</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">str</span> = <span class="built_in">input</span>()</span><br><span class="line">    string = <span class="built_in">str</span>.upper()</span><br><span class="line">    num = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> string:</span><br><span class="line">        <span class="keyword">if</span> ch.isalpha():</span><br><span class="line">            num += <span class="built_in">ord</span>(ch) - <span class="number">64</span></span><br><span class="line">    <span class="built_in">print</span>(num)</span><br></pre></td></tr></table></figure>
+
+<h1 id="10"><a href="#10" class="headerlink" title="10"></a>10</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">prefix</span>(<span class="params">str1, str2</span>):</span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(str1) <span class="keyword">and</span> i &lt; <span class="built_in">len</span>(str2):</span><br><span class="line">        <span class="keyword">if</span> str1[i] != str2[i]:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> str1[:i]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    str1 = <span class="built_in">input</span>()</span><br><span class="line">    str2 = <span class="built_in">input</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> prefix(str1, str2):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;No common prefix&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(prefix(str1, str2))</span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://adminfly739.github.io/blog">adminFLY_739</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://adminfly739.github.io/blog/2024/4/11/py%E5%AE%9E%E9%AA%8C6/">http://adminfly739.github.io/blog/2024/4/11/py%E5%AE%9E%E9%AA%8C6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://adminfly739.github.io/blog" target="_blank">FLY's blog!</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/blog/tags/python/">python</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/blog/2024/4/7/py%E5%AE%9E%E9%AA%8C6/" title="py实验6"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">py实验6</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/blog/2024/4/1/python/" title="python"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-01</div><div class="title">python</div></div></a></div><div><a href="/blog/2024/4/3/py%E5%AE%9E%E9%AA%8C5/" title="py实验5"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-03</div><div class="title">py实验5</div></div></a></div><div><a href="/blog/2024/4/7/py%E5%AE%9E%E9%AA%8C6/" title="py实验6"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-07</div><div class="title">py实验6</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">adminFLY_739</div><div class="author-info__description">黄色的树林里分出两条路，可惜我不能同时去涉足</div></div><div class="card-info-data site-data is-center"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/adminFLY739" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2491435063@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">HZNU cs 在读</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1"><span class="toc-text">1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2"><span class="toc-text">2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3"><span class="toc-text">3</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4"><span class="toc-text">4</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5"><span class="toc-text">5</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6"><span class="toc-text">6</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7"><span class="toc-text">7</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8"><span class="toc-text">8</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9"><span class="toc-text">9</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10"><span class="toc-text">10</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2024/4/11/py%E5%AE%9E%E9%AA%8C6/" title="py实验6">py实验6</a><time datetime="2024-04-11T15:00:00.000Z" title="发表于 2024-04-11 23:00:00">2024-04-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2024/4/7/py%E5%AE%9E%E9%AA%8C6/" title="py实验6">py实验6</a><time datetime="2024-04-07T03:00:00.000Z" title="发表于 2024-04-07 11:00:00">2024-04-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2024/4/3/py%E5%AE%9E%E9%AA%8C5/" title="py实验5">py实验5</a><time datetime="2024-04-03T05:00:00.000Z" title="发表于 2024-04-03 13:00:00">2024-04-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2024/4/1/c-of-micro-frank/" title="C of Micro_Frank">C of Micro_Frank</a><time datetime="2024-04-01T12:00:00.000Z" title="发表于 2024-04-01 20:00:00">2024-04-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2024/4/1/python/" title="python">python</a><time datetime="2024-04-01T12:00:00.000Z" title="发表于 2024-04-01 20:00:00">2024-04-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By adminFLY_739</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js?v=4.13.0"></script><script src="/blog/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/blog/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
