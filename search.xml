@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Java of Micro_Frank</title>
+      <link href="/blog/2024/5/20/java-of-micro-frank/"/>
+      <url>/blog/2024/5/20/java-of-micro-frank/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><blockquote><p>假如从520开始学Java</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>py实验10</title>
       <link href="/blog/2024/5/11/py%E5%AE%9E%E9%AA%8C10/"/>
       <url>/blog/2024/5/11/py%E5%AE%9E%E9%AA%8C10/</url>
